@@ -20,7 +20,7 @@ android:
 script:
     - echo script start!
     - env
-    - echo $ABC
+    - echo $ABC"@github.com"
     - echo $TRAVIS_TAG
     - echo $TRAVIS_BRANCH
 after_success:

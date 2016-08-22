@@ -1,0 +1,23 @@
+sudo: true
+language: android
+jdk:
+    - oraclejdk8
+addons:
+  apt:
+    packages:
+      - git
+      - unzip
+android:
+  components:
+    - platform-tools
+    - build-tools-24.0.0
+    - android-24
+    - extra-android-m2repository
+    - extra-android-support
+script:
+    - echo script
+    - env
+    - echo $TRAVIS_TAG
+    - echo $TRAVIS_BRANCH
+after_success:
+    - echo sucess, start deploy

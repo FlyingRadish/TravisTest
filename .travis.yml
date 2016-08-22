@@ -21,3 +21,6 @@ script:
     - echo $TRAVIS_BRANCH
 after_success:
     - echo sucess, start deploy
+branches:
+  only:
+    - master

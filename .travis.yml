@@ -15,7 +15,7 @@ android:
     - extra-android-m2repository
     - extra-android-support
 script:
-    - echo script start
+    - echo script start!
     - env
     - echo $TRAVIS_TAG
     - echo $TRAVIS_BRANCH
